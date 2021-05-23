@@ -4,6 +4,7 @@ import { VISIBILITY_FILTERS } from "../../constants";
 const initialState = VISIBILITY_FILTERS.ALL;
 
 const visibilityFilter = (state = initialState, action) => {
+  console.log("visibilityFilter", action);
   switch (action.type) {
     case SET_FILTER: {
       return action.payload.filter;
